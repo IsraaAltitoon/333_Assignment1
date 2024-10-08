@@ -1,0 +1,156 @@
+html{
+    background-color:#EDEAE9;
+    height:100%;
+}
+body{
+    margin:0;
+    padding:0;
+}
+header{
+    background-image: url(background2.jpg);
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.94;
+}
+ul{
+    margin-top: 0;
+}
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right:20px;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+}
+nav li a{
+   text-decoration:none; 
+}
+/* Hover effects on nav items */
+nav a:hover{
+    color:#BB000F;
+}
+header h2{
+text-align: center;
+font-family:"Bona Nova SC", serif;
+margin-top:120px;
+font-size: 46px;
+color:white;
+}
+.my_button{
+background-color: white;
+ box-shadow:1px 1px #7b22c8;
+ border-radius:44px;  
+ width:150px;
+ margin-left:42% ;
+ padding:6px;
+}
+/* Hover effects */
+.my_button a{
+ text-decoration: none;
+ padding-left:15px;
+}
+.my_button:hover{
+    transition-duration:1s;
+    background-color: #F3E16F;  
+}
+#ca1{
+    text-align: center;
+    font-size: 3rem;
+    color:#BB000F;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-weight:bold;
+}
+#ca2{
+    text-align: center;
+    font-size: 1.5rem;
+    color:#BB000F;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-weight:bolder;
+}
+#ca3{
+    text-align: center;
+    font-size: 1rem;
+    color:#BB000F;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Use of flexbox */
+.cards{
+    display: flex;
+    justify-content: center;
+}
+main h2{
+    text-align:center;
+    margin-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#6e3a9b;
+}
+table{
+    background-color:lightcyan;
+    text-align: center;
+    margin-top:70px;
+    margin-left:25px;
+    margin-right:25px;
+    border-collapse: collapse;
+}
+tr,td,th{
+    border: 2px solid black;  
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:14px;
+}
+.placeholder{
+    text-align:center;
+    margin-top: 50px;
+}
+.staff p{
+    font-family: "Merriweather", serif; 
+    margin-left:20px;
+}
+/* Use of grid */
+.teachers{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,0.5fr));
+    gap: 1rem;
+}
+.t1 img{
+    width:100%;
+    height: auto;
+}
+.t1 p{
+    text-align: center;
+    font-family: "Merriweather", serif; 
+    font-size: 10px;
+}
+.announcements{
+    margin-top: 60px;
+}
+.announcements li{
+    font-family: "Merriweather", serif;
+}
+/* Use of flexbox */
+.announcements ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+/* Use of flexbox */
+.links{
+    display: flex;
+    justify-content: space-around;
+    background-color:#F3E16F;
+    font-family: "Merriweather", serif; 
+    color:black;
+}
+.link2 a{
+    margin-right:10px;
+    color:black;
+}
+/* Responsive for mobile view */
+@media (max-width:600px){
+    .teachers{
+        grid-template-columns: 1fr;
+    }
+    .my_button{
+        margin-left:32%
+    }
+}
