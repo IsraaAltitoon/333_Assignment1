@@ -45,11 +45,11 @@ background-color: white;
  margin-left:42% ;
  padding:6px;
 }
-/* Hover effects */
 .my_button a{
  text-decoration: none;
  padding-left:15px;
 }
+/* Hover effects */
 .my_button:hover{
     transition-duration:1s;
     background-color: #F3E16F;  
